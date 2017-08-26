@@ -38,7 +38,7 @@
           <tr *ngFor="let player of players; let i = index"><td>{{player.name}}</td><td><button class="btn btn-sm btn-light" (click)="deletePlayer(i)">Delete</button></td></tr>
         </tbody>
       </table>
-      <form #addPlayerForm (ngSubmit)="addPlayer(addPlayerName.value)">
+      <form #addPlayerForm (ngSubmit)="addPlayer(addPlayerName.value)" class="form-inline">
         <input #addPlayerName class="form-control" placeholder="Name">
         <button type="submit" class="btn btn-primary">Add</button>
       </form>
